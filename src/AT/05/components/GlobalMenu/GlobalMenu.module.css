@@ -1,0 +1,26 @@
+.globalMenu {
+  display: none;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  padding: 1rem;
+}
+
+.globalMenu.open {
+  display: flex;
+}
+
+.globalMenu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .globalMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: global-menu;
+  }
+  
+}
