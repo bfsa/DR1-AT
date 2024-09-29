@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .botao-tema {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lista-itens {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .item-nome {
+    font-weight: bold;
+  }
+  
+  .item-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .item-quantidade button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .item-total {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .total-compra {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .tema-escuro {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .tema-escuro .item {
+    background-color: #444;
+  }
+  
+  .tema-escuro .botao-tema,
+  .tema-escuro .item-quantidade button {
+    background-color: #555;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .lista-itens {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .item {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .item-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-preco {
+      margin-top: 5px;
+    }
+  
+    .item-quantidade {
+      margin: 10px 0;
+    }
+  
+    .total-compra {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .controls span {
+    font-size: 18px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .image {
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
