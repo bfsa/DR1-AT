@@ -1,0 +1,13 @@
+.mainContent {
+  background-color: #ffffff;
+  padding: 1rem;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    grid-area: main-content;
+  }
+}

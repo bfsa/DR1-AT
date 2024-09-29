@@ -1,0 +1,11 @@
+.ads {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ads {
+    grid-area: ads;
+  }
+}

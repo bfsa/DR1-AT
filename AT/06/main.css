@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ui-sans-serif,system-ui,sans-serif,apple color emoji,segoe ui emoji,Segoe UI Symbol,noto color emoji;
+  font-weight: 500;
+  caret-color: transparent;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.app-footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-main {
+    padding: 2rem;
+  }
+
+  .app-footer {
+    font-size: 1rem;
+  }
+}
